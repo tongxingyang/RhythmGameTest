@@ -1,1 +1,3 @@
-Unity 2020.3.28f1
+- Open project in Unity 2020.3.28f1
+- Open Scene/Menus.unity
+- Play the game
