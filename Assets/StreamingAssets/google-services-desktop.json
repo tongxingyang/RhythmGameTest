@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "200960044424",
+    "firebase_url": "https://g4b-queen-2020.firebaseio.com",
+    "project_id": "g4b-queen-2020",
+    "storage_bucket": "g4b-queen-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200960044424:android:ba3bcd130bfa0b96921e3d",
+        "android_client_info": {
+          "package_name": "com.umusic.queenrocktourgp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200960044424-626ptj42gafaud2h5es55q2uam6qkbjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0w3-vOjKDdXBuN5k1wfzdh3P6EIn2V_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200960044424-626ptj42gafaud2h5es55q2uam6qkbjl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "200960044424-qj7olqsgbq9g6nlrtetukk7be86b4roi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gameloft.queen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
