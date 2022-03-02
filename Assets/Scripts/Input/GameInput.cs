@@ -227,6 +227,11 @@ public class GameInput : MonoBehaviour
     #region Swipe
     public bool IsSwipeLeft()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeLeft)
@@ -239,6 +244,11 @@ public class GameInput : MonoBehaviour
     }
     public bool IsSwipeRight()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeRight)
@@ -252,6 +262,11 @@ public class GameInput : MonoBehaviour
 
     public bool IsSwipeRightOnRightSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeRight && info.isRightTouch)
@@ -264,6 +279,11 @@ public class GameInput : MonoBehaviour
     }
     public bool IsSwipeRightOnLeftSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeRight && !info.isRightTouch)
@@ -277,6 +297,11 @@ public class GameInput : MonoBehaviour
 
     public bool IsSwipeLeftOnRightSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeLeft && info.isRightTouch)
@@ -289,6 +314,11 @@ public class GameInput : MonoBehaviour
     }
     public bool IsSwipeLeftOnLeftSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeLeft && !info.isRightTouch)
@@ -302,6 +332,11 @@ public class GameInput : MonoBehaviour
 
     public bool IsSwipeUpOnRightSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeUp && info.isRightTouch)
@@ -314,6 +349,11 @@ public class GameInput : MonoBehaviour
     }
     public bool IsSwipeUpOnLeftSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeUp && !info.isRightTouch)
@@ -327,6 +367,11 @@ public class GameInput : MonoBehaviour
 
     public bool IsSwipeDownOnRightSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeDown && info.isRightTouch)
@@ -339,6 +384,11 @@ public class GameInput : MonoBehaviour
     }
     public bool IsSwipeDownOnLeftSide()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeDown && !info.isRightTouch)
@@ -365,6 +415,11 @@ public class GameInput : MonoBehaviour
 
     public bool IsSwipeUp()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeUp)
@@ -377,6 +432,11 @@ public class GameInput : MonoBehaviour
     }
     public bool IsSwipeDown()
     {
+        if (keyInput.Clicked)
+        {
+            return true;
+        }
+
         foreach (TouchInfo info in touchInput.Touches)
         {
             if (info.swipeDown)
@@ -422,10 +482,10 @@ public class GameInput : MonoBehaviour
     #region Holding
     public bool IsHolding()
     {
-        // if (keyInput.Pressing)
-        // {
-        //     return true;
-        // }
+        if (keyInput.Pressing)
+        {
+            return true;
+        }
         if (touchInput.HasAnyHolding())
         {
             foreach (TouchInfo info in touchInput.Touches)

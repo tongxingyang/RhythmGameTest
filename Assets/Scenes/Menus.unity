@@ -5512,7 +5512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24602f7e5c3050440be577a37d705b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _useVueneFromEditor: 0
+  _useVueneFromEditor: 1
 --- !u!20 &1711252233 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 8975055037798197409, guid: 4a65b0ef6bf754c288ae9b0b609bdae8,
