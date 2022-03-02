@@ -22,6 +22,7 @@ public enum LOADING_TO: int
 
 public class LoadingManager : Singleton<LoadingManager>
 {
+    public Camera menuCamera;
     public ViewLoading loadingObj;
     private AsyncOperation mAsyncCommonAdditive;
     private AsyncOperation mAsyncAdditive;
@@ -172,13 +173,20 @@ public class LoadingManager : Singleton<LoadingManager>
         mAsyncAdditive.allowSceneActivation = false;
         
         // Wait for to make sure audios are ready.
-        while(GetLoadingProgress() < 0.9f)
+        while(mAsyncAdditive.progress < 0.9f)
         {
             SetSceneProgress(mAsyncAdditive.progress);
             yield return null;
         }
         SetSceneProgress(1);
+        
+        while(audioLoadProgress < 1)
+        {
+            yield return null;
+        }
+
         mAsyncAdditive.allowSceneActivation = true;
+        menuCamera.gameObject.SetActive(false);
         stadiumIsLoaded = true;
 
         yield return new WaitForSeconds(Define.WAIT_FOR_SECOND);                                
@@ -331,6 +339,7 @@ public class LoadingManager : Singleton<LoadingManager>
         }
 
         LoadAssetBundles.Instance.UnloadAllBundle();
+        menuCamera.gameObject.SetActive(true);
         stadiumIsLoaded = false;
         yield return null;
     }

@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus.unity
     guid: e77f1cd2a984f401389d0df23247d9dc
   - enabled: 1
-    path: Assets/Scenes/Stadium.unity
+    path: Assets/Scenes/stadium.unity
     guid: 071afa595ced34872b204eccc21a78dc
   m_configObjects: {}

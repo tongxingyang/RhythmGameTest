@@ -78,7 +78,7 @@ public class AssetBundleMgr : MonoBehaviour
         bundleLocalPath = Path.Combine(Application.streamingAssetsPath, "AssetBundles/StandaloneWindows64");
     #endif
     #if UNITY_EDITOR
-        bundleLocalPath = Path.Combine("Assets", "AssetBundles/StandaloneWindows64");
+        bundleLocalPath = Path.Combine(Application.dataPath, "AssetBundles/StandaloneWindows64");
     #endif
         ASSET_BUNDLE_JSON_LINK_LOCAL = Path.Combine(Application.persistentDataPath, "assetbundleinfo.json");
 

@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 406462267
+CRC: 2889835120
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -17,5 +17,4 @@ AssetBundleManifest:
       Dependencies: {}
     Info_4:
       Name: stadium_materials
-      Dependencies:
-        Dependency_0: common_texture
+      Dependencies: {}

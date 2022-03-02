@@ -24,9 +24,6 @@ public class UpdateVenueProfile : MonoBehaviour
     public GameObject spotLight;
     public Renderer[] objectMaterialList;
 
-    public Transform RogerTransform;
-    public Animator piano_animator;
-
     void Awake()
     {
         instance = this;

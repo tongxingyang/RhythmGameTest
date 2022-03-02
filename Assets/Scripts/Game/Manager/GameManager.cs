@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
     public BeatManager beatManager;
     public CameraShake cameraShake;
     public Camera gameCamera;
-    public Camera mainCamera;
 
     public Timer timerControl = new Timer();
 
@@ -444,11 +443,6 @@ public class GameManager : MonoBehaviour
             //noteList = null;
         }
         Screen.sleepTimeout = SleepTimeout.SystemSetting;
-    }
-
-    public Camera GetMainCamera()
-    {
-        return mainCamera;
     }
 
     public Define.COLORS GetMostColor()

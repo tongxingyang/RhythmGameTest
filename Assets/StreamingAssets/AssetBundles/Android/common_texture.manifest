@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1529080788
+CRC: 2512481115
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e0d190010524fa271ee31d3159504a8f
+    Hash: 2bd2ec522bbf4859ffca70cd8f927864
   TypeTreeHash:
     serializedVersion: 2
     Hash: b0363f7088f9761414f730641bf9a24b
@@ -21,9 +21,7 @@ Assets:
 - Assets/Modules/Environment/Shared_Texture/Crowd_Var1.1_FINAL.tga
 - Assets/Modules/Environment/Shared_Texture/Crowd_Var4_FINAL.tga
 - Assets/Modules/Environment/Shared_Texture/Crowd_Var2_FINAL.tga
-- Assets/Modules/Environment/stadium/Textures/Speaker_Trimsheet_2.tga
 - Assets/Modules/Environment/Shared_Texture/Crowd_Var3.1_FINAL.tga
 - Assets/Modules/Environment/Shared_Assets/Textures/Gong.tga
-- Assets/Modules/Environment/stadium/Textures/Speaker_Trimsheet.tga
 - Assets/Modules/Environment/Shared_Texture/Crowd_Var2.1_FINAL.tga
 Dependencies: []

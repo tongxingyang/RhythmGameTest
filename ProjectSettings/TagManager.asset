@@ -3,7 +3,27 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Note
+  - EnvCamera
+  - GameCamera
+  - Jukebox
+  - BandLogo
+  - Piano
+  - BandPicture
+  - PortableSynthesizer
+  - TrackRecorder
+  - Guitars
+  - AchievementBoard
+  - Drums
+  - Characters
+  - EnvVFX
+  - LaneLine
+  - Activator
+  - Brian
+  - Roger
+  - Freddie
+  - John
   layers:
   - Default
   - TransparentFX
@@ -17,23 +37,23 @@ TagManager:
   - 
   - 
   - 
+  - EnvCharacter
+  - EnvLight
+  - 
+  - EnvStage
+  - 
+  - EnvBackground
+  - 
+  - 
+  - 
+  - APTouchZone
   - 
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - EnvRealtime
   - 
   - 
   - 
